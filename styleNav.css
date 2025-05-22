@@ -1,0 +1,72 @@
+.navbar-light .navbar-nav .nav-link {
+  color: #706d6d;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.nav-item {
+    width: 120px;
+    height: 100px;
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#item1 {
+    border-bottom: 6px solid gray;
+}
+
+#item2 {
+    border-bottom: 6px solid red;
+}
+
+#item3 {
+    border-bottom: 6px solid orange;
+}
+
+#item4 {
+    border-bottom: 6px solid yellow;
+}
+
+#item5 {
+    border-bottom: 6px solid green;
+}
+
+#item6 {
+    border-bottom: 6px solid lightskyblue;
+}
+
+#item7 {
+    border-bottom: 6px solid blue;
+}
+
+
+#item1:hover {
+    background-color: gray;
+    transition: 0.7s;
+}
+#item2:hover {
+    background-color: red;
+    transition: 0.7s;
+}
+#item3:hover {
+    background-color: orange;
+    transition: 0.7s;
+}
+#item4:hover {
+    background-color: yellow;
+    transition: 0.7s;
+}
+#item5:hover {
+    background-color: green;
+    transition: 0.7s;
+}
+#item6:hover {
+    background-color: lightskyblue;
+    transition: 0.7s;
+}
+#item7:hover {
+    background-color:blue;
+    transition: 0.7s;
+}
