@@ -9,8 +9,8 @@
 </head>
 <body>
     <footer>
-      <main class="contenido-registro">
-    <h1>¡Regístrate para recibir correos electrónicos de Pokémon!</h1>
+      <div class="contenido-registro">
+    <h1 class="titulo">¡Regístrate para recibir correos electrónicos de Pokémon!</h1>
     <form class="registro-correo">
       <input type="email" placeholder="Correo electrónico" required>
       
@@ -21,22 +21,30 @@
         </select>
         <input type="date" required>
       </div>
-
-      <div class="seleccion">
-        <label>
-          <input type="checkbox">
-          Videojuegos, aplicaciones y muchas más cosas de Pokémon
-        </label>
-        <label>
-          <input type="checkbox">
-          Acepto las <a href="#">Condiciones de uso</a> y la 
-          <a href="#">Aviso de privacidad</a> de Pokémon.es
-        </label>
+            <button type="subir">Regístrate</button>
       </div>
 
-      <button type="subir">Regístrate</button>
+<div class="seleccion">
+  <h1>Me gustaría recibir correos electrónicos acerca de:</h1>
+
+  <label class="checkbox-label">
+    <input type="checkbox">
+    <span>
+      Videojuegos, aplicaciones y muchas más cosas de Pokémon
+    </span>
+  </label>
+
+  <label class="checkbox-label">
+    <input type="checkbox">
+    <span>
+      Acepto las <a href="#">Condiciones de uso</a> y la
+      <a href="#">Aviso de privacidad</a> de Pokémon.es
+    </span>
+  </label>
+</div>
+
+
         </form>
-    </main>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
