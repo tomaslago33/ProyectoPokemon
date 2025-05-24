@@ -21,7 +21,7 @@ footer {
   justify-content: start;
   flex-direction: column;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   box-sizing: border-box;
 }
 
@@ -104,13 +104,55 @@ span a{
   margin-top: 2px;
   accent-color: white;
 }
-.checkbox-label input[type="checkbox2"] {
-  width: 25px;
-  height: 25px;
-  margin-top: 2px;
-  accent-color: white;
-}
+
 .checkbox-label span {
   display: inline-block;
   color: white;
+}
+
+.footer2{
+  background-color: #1c1c1c;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
+  gap: 20px;
+}
+.footer-cols .col:nth-child(3){
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer-cols > div {
+  flex: 1 1 200px; 
+}
+
+.footer .logo {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+.social-icons img {
+  width: 45px;
+  
+}
+
+.legal img {
+  padding-left: 20px;
+  max-width: 150px;
+  margin-bottom: 10px;
 }
