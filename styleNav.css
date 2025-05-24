@@ -1,0 +1,269 @@
+
+.navbar-light .navbar-nav .nav-link {
+  color: #706d6d;
+}
+.nav-item {
+    width: 120px;
+    height: 100px;
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: filter 0.3s ease;
+}
+
+
+.nav-item span, .nav-item img {
+    transition: all 0.3s ease;
+} 
+
+.nav-item:hover span {
+    color: white;
+}
+
+.nav-item:hover #homeImg {
+    content: url(imgNav/home2.png);
+}
+.nav-item:hover #pokeImg {
+    content: url(imgNav/poke2.png);
+}
+.nav-item:hover #appImg {
+    content: url(imgNav/phone2.png);
+}
+.nav-item:hover #cardImg {
+    content: url(imgNav/cards2.png);
+}
+.nav-item:hover #playImg {
+    content: url(imgNav/play2.png);
+}
+.nav-item:hover #tropImg {
+    content: url(imgNav/trophy2.png);
+}
+.nav-item:hover #newsImg {
+    content: url(imgNav/news2.png);
+}
+
+.nav-item .nav-link img {
+    width: 35px;
+    display: block;
+    margin-left: 35px;
+}
+
+.nav-item .nav-link span {
+    font-size: 13px;
+}
+
+.nav-item .nav-link{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#item1 {
+    border-bottom: 6px solid gray;
+}
+
+#item2 {
+    border-bottom: 6px solid red;
+}
+
+#item3 {
+    border-bottom: 6px solid orange;
+}
+
+#item4 {
+    border-bottom: 6px solid rgb(188, 188, 12);
+}
+
+#item5 {
+    border-bottom: 6px solid green;
+}
+
+#item6 {
+    border-bottom: 6px solid rgb(77, 155, 203);
+}
+
+#item7 {
+    border-bottom: 6px solid rgb(7, 7, 155);
+}
+
+
+#item1:hover {
+    background-color: gray;
+    transition: 0.7s;
+}
+#item2:hover {
+    background-color: red;
+    transition: 0.7s;
+}
+#item3:hover {
+    background-color: orange;
+    transition: 0.7s;
+}
+#item4:hover {
+    background-color: rgb(188, 188, 12);
+    transition: 0.7s;
+}
+#item5:hover {
+    background-color: green;
+    transition: 0.7s;
+}
+#item6:hover {
+    background-color: rgb(77, 155, 203);
+    transition: 0.7s;
+}
+#item7:hover {
+    background-color:rgb(7, 7, 155);
+    transition: 0.7s;
+}
+
+
+@media (min-width: 992px) {
+    .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .collapse-search-form {
+        display: none;
+    }
+
+    .user-session {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+  /* Estilos que solo se aplican cuando el navbar está colapsado */
+  .navbar-collapse {
+    background-color:   white;
+  } 
+
+  .container-toggler button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    background-color: rgb(0, 0, 0);
+  };
+
+  .material-icons {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .container-toggler {
+    background-color: rgb(41, 40, 40);
+    width: 100%;
+  }
+
+  .navbar-collapse .container {
+    padding: 0;
+    max-width: 100%;
+  }
+
+   .nav-item .nav-link img {
+    display: inline;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    border: 1px solid rgb(198, 197, 197);
+
+  }
+
+  .nav-link span {
+    flex-grow: 1;
+    padding-left: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    justify-content: starts;
+  }
+
+
+    #item1 {
+        border-left: 6px solid gray;
+        border-bottom: none;
+    }
+
+    #item2 {
+        border-left: 6px solid red;
+        border-bottom: none;
+
+    }
+
+    #item3 {
+        border-left: 6px solid orange;
+        border-bottom: none;
+    }
+
+    #item4 {
+        border-left: 6px solid rgb(188, 188, 12);
+        border-bottom: none;
+    }
+
+    #item5 {
+        border-left: 6px solid green;
+        border-bottom: none;
+    }
+
+    #item6 {
+        border-left: 6px solid rgb(77, 155, 203);
+        border-bottom: none;
+    }
+
+    #item7 {
+        border-left: 6px solid rgb(7, 7, 155);
+        border-bottom: none;
+    }
+
+    .collapse-search-form {
+        background-color: #706d6d;
+        padding: 10px;
+    }
+
+
+    .collapse-search-form input {
+        background-color: #424040;
+    }
+
+    .collapse-search-form input::placeholder {
+        color: #706d6d;
+    }
+
+    .navbar-toggler {
+        display: inline;
+    }
+
+    .user-session {
+        color: white;
+        float: right;
+        display: flex;
+        background-color: rgb(95, 92, 92);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        height: 90px;
+        padding: 10px;
+        justify-content: center;
+        text-decoration: none;
+        border-bottom: none;
+    }
+
+}
+
