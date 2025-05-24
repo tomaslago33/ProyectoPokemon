@@ -1,0 +1,22 @@
+/* Banner superior */
+.top-banner {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+
+
+
+/* Imagen dentro del banner */
+.top-banner img {
+  transition: all 0.1s ease;  /* Suaviza el efecto */
+  display: inline-block;
+}
+
+
+/* Efecto al pasar el mouse */
+.top-banner img:hover {
+  filter: brightness(1.4);     /* Aclara la imagen */
+  border: 1px solid #ffffffe5; /* Borde blanco semi-transparente */}
