@@ -20,3 +20,137 @@
 .top-banner img:hover {
   filter: brightness(1.4);     /* Aclara la imagen */
   border: 1px solid #ffffffe5; /* Borde blanco semi-transparente */}
+
+
+
+  /* stilo de la pagina 3, del contenido*/
+
+.bloques {
+  background-color: #000000;
+  padding: 40px 50px;
+}
+
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 columnas fijas */
+  grid-auto-rows: 200px; /* altura de cada fila */
+  gap: 20px;
+}
+
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+
+.card-img {
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.card-texto {
+  height: 40%;
+  padding: 10px;
+  background-color: rgba(255, 180, 71, 0.9); /* fondo solo en el texto */
+  text-align: justify;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* pega el texto abajo */
+}
+
+
+
+
+.card-texto h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #000;
+}
+
+
+.card-texto p {
+  color: #555;
+  font-size: 12px;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/*   Bloque destacado grande */
+.destacado {
+  grid-column: 1 / span 2; /* ocupa columnas 1 y 2 */
+  grid-row: 1 / span 2;    /* ocupa filas 1 y 2 */
+}
+
+
+.mini {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box; /* para que no desborde */
+}
+
+
+/* Imagen a la izquierda */
+.mini .card-img {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Texto a la derecha, ocupa toda la altura */
+.mini .card-texto {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(206, 255, 93, 0.9); /* fondo claro para el texto */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 💡 esto alinea el contenido abajo */
+  text-align: justify;
+}
+
+
+.contenedor2 {
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 columnas fijas */
+  grid-auto-rows: 300px; /* altura de cada fila */
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+
+}
+.levantado {
+  transform: translateY(-20px); /* lo levanta 20px hacia arriba */
+}
+
+
