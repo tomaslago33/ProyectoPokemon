@@ -6,9 +6,6 @@
   font-weight: bold;
 }
 
-
-
-
 /* Imagen dentro del banner */
 .top-banner img {
   transition: all 0.1s ease;  /* Suaviza el efecto */
@@ -22,17 +19,16 @@
   border: 1px solid #ffffffe5; /* Borde blanco semi-transparente */}
 
 
-
-  /* stilo de la pagina 3, del contenido*/
+/* stilo de la pagina 3, del contenido*/
 
 .bloques {
-  background-color: #000000;
+  background-color: #ffffff;
   padding: 40px 50px;
 }
 
 
 .contenedor {
-  width: 90%;
+  width: 73%;
   max-width: 1200px;
   margin: auto;
   display: grid;
@@ -50,6 +46,15 @@
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
+}
+
+.card.mini {
+  display: flex !important;
+  flex-direction: row !important;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 
@@ -87,14 +92,28 @@
 
 
 .card-texto p {
-  color: #555;
+  color: #ffffff;
   font-size: 12px;
   margin-top: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+.titulo { 
+  width: 73%;             /* igual al .contenedor */
+  max-width: 1200px;      /* igual también */
+  margin: 0 auto 40px;    /* centra con auto y separa abajo */
+  padding: 20px 0;
+  color: #9c9c9c;
+  text-align: justify;
+  font-size:20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 
+
+  font-family: "Flexo-Regular", arial, sans-serif;
+}
 /*   Bloque destacado grande */
 .destacado {
   grid-column: 1 / span 2; /* ocupa columnas 1 y 2 */
@@ -103,16 +122,13 @@
 
 
 .mini {
-  width: 100%;
   display: flex;
   flex-direction: row;
   height: 180px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  box-sizing: border-box; /* para que no desborde */
 }
-
 
 /* Imagen a la izquierda */
 .mini .card-img {
@@ -122,19 +138,17 @@
   background-position: center;
 }
 
-
 /* Texto a la derecha, ocupa toda la altura */
 .mini .card-texto {
   width: 50%;
   height: 100%;
-  background-color: rgba(206, 255, 93, 0.9); /* fondo claro para el texto */
+  background-color: rgba(211, 194, 63, 0.9); /* fondo claro para el texto */
   padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center; /* 💡 esto alinea el contenido abajo */
   text-align: justify;
 }
-
 
 .contenedor2 {
   width: 70%;
@@ -146,7 +160,6 @@
   gap: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
 
 }
 .levantado {
