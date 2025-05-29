@@ -166,4 +166,34 @@
   transform: translateY(-20px); /* lo levanta 20px hacia arriba */
 }
 
+.bloque-poke {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+  color: white;
+}
+
+.bloque-poke:hover {
+  transform: scale(1.03);
+}
+
+.texto-bloque {
+  background-color: rgba(99, 221, 105, 0.6);
+  padding: 12px;
+  font-size: 14px;
+  text-align: justify;
+  height: 150px;
+}
+
+.levantado {
+  transform: translateY(-20px);
+}
+
 
