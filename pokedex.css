@@ -1,0 +1,7 @@
+@media (min-width: 992px) { 
+    .container-fluid {
+        max-width: 1200px;
+        padding-left: auto;
+        padding-right: auto;
+    }
+}  
