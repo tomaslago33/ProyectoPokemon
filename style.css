@@ -20,6 +20,31 @@
 
 
 /* stilo de la pagina 3, del contenido*/
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px; /* o el tamaño deseado */
+  overflow: hidden;
+}
+
+.hero .imag {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* si quieres el texto encima de la imagen */
+.hero .bloque-texto {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+
+
+
+
 
 .bloques {
   background-color: #ffffff;
@@ -28,11 +53,11 @@
 
 
 .contenedor {
-  width: 73%;
+  width: 70%;
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 4 columnas fijas */
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
   grid-auto-rows: 200px; /* altura de cada fila */
   gap: 20px;
 }
@@ -98,13 +123,13 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+/* comienzo de stylo de la parte de las primerasa imagenes y cuadros */
 .titulo { 
   width: 73%;             /* igual al .contenedor */
   max-width: 1200px;      /* igual también */
   margin: 0 auto 40px;    /* centra con auto y separa abajo */
   padding: 20px 0;
-  color: #9c9c9c;
+  color: #dbd3d3;
   text-align: justify;
   font-size:20px;
   font-weight: bold;
@@ -114,86 +139,34 @@
 
   font-family: "Flexo-Regular", arial, sans-serif;
 }
-/*   Bloque destacado grande */
-.destacado {
-  grid-column: 1 / span 2; /* ocupa columnas 1 y 2 */
-  grid-row: 1 / span 2;    /* ocupa filas 1 y 2 */
+.imag {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 
-.mini {
-  display: flex;
-  flex-direction: row;
-  height: 180px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Imagen a la izquierda */
-.mini .card-img {
-  width: 50%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-/* Texto a la derecha, ocupa toda la altura */
-.mini .card-texto {
-  width: 50%;
-  height: 100%;
-  background-color: rgba(211, 194, 63, 0.9); /* fondo claro para el texto */
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* 💡 esto alinea el contenido abajo */
-  text-align: justify;
-}
-
-.contenedor2 {
-  width: 70%;
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 4 columnas fijas */
-  grid-auto-rows: 300px; /* altura de cada fila */
-  gap: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-}
-.levantado {
-  transform: translateY(-20px); /* lo levanta 20px hacia arriba */
-}
-
-.bloque-poke {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
+.bloque-texto {
+  padding: 10px;
   color: white;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  font-family: flexo-medium, Arial, Helvetica, sans-serif;
 }
 
-.bloque-poke:hover {
-  transform: scale(1.03);
+
+.bg-naranja { background-color: brown; }
+
+
+/* Borde redondeado para todas las cajas */
+.caja {
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.texto-bloque {
-  background-color: rgba(99, 221, 105, 0.6);
-  padding: 12px;
-  font-size: 14px;
-  text-align: justify;
-  height: 150px;
-}
 
-.levantado {
-  transform: translateY(-20px);
+.espacio-inferior {
+  margin-bottom: 20px;
 }
 
 
