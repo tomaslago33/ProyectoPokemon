@@ -94,23 +94,38 @@
 
     <!-- MAIN EDGAR POKEDEX-->
     <main>
-        <div class="container-fluid vh-100">
+        <div class="container-fluid vh-100" style="padding: 0;">
             <div class="row bg-light">
                 <div class="col">
                     <h1 id="Tittle-Pokedex" style="color: gray; font-weight: 120; font-size: 40px; margin-left: 30px;">Pokédex</h1>
                 </div>
             </div>
-            <div class="row bg-dark justify-content-center">
-                <div class="col-xl-4 col-md-12 col-sm-12">
-                    <h1 style="font-size: 30px; color: white; margin-top: 20px; font-weight: 120;">Nombre o numero</h1>
+            <div class="row justify-content-center" style="background-color: rgb(41, 41, 47); margin: -12px;">
+                <div class="col-xl-6 col-md-12 col-sm-12" style="padding: 0;">
+                    <h1 class="title-search" style="font-size: 30px; color: white; margin-top: 20px; font-weight: 120;">Nombre o numero</h1>
                     <div class="button-search">
                         <input type="text" style="width: 300px; height: 45px;">
                         <button type="button" class="btn btn-lg" style="width: 60px; height: 50px; margin-left: 20px; background-color: rgb(255, 136, 0);" data-mdb-ripple-init><i class="bi bi-search"></i></button>
                     </div>
-                    <p style="color: white; margin-bottom: 20px;">¡Usa la busqueda avanzada para encontrar Pokemon por su tipo, debilidad, habilidad y demas datos!</p>
+                    <p class="text-search" style="color: white; margin-bottom: 20px;">¡Usa la busqueda avanzada para encontrar Pokemon por su tipo, debilidad, habilidad y demas datos!</p>
                 </div>
-                <div class="col-xl-4 col-md-12 col-sm-12">
-                    <p style="background-color: rgb(74, 163, 74); color: rgb(255, 255, 255); width: 450px; height: 90px; font-size: 20px; padding: 10px; margin-top: 70px; border-radius:   10px;">Busca un Pokémon por su nombre o usando su número de la Pokédex Nacional</p>
+                <div class="col-xl-6 col-md-12 col-sm-12">
+                    <p style="background-color: rgb(74, 163, 74); color: rgb(255, 255, 255); width: 450px; height: 90px; font-size: 20px; padding: 10px; margin-top: 40px; border-radius: 10px;">Busca un Pokémon por su nombre o usando su número de la Pokédex Nacional</p>
+                </div>
+            </div>
+            <div class="row" style="margin: -12px;">
+                <div class="col-xl-12 col-md-12 col-sm-12" style="padding: 0px;">
+                    <div class="shutter-wrapper">
+                        <div class="shutter-content">
+                            <p id="contenidoShutter">Contenido del collapse</p>
+                        </div>
+                        <div class="espacio" style="background-color: #545756; width: 100%;">
+                            <h1 style="height: 36px; width: 100%;"></h1>
+                        </div>
+                        <button class="shutter-button">
+                            <span>Mostrar busqueda avanzada</span><span class="arrow">&#x25BC;</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -191,6 +206,7 @@
         </div>
         </div>
     </footer>
+    <script src="pokedex.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
