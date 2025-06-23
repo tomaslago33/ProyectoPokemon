@@ -156,3 +156,8 @@ span a{
   max-width: 150px;
   margin-bottom: 10px;
 }
+
+.conteiner-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
