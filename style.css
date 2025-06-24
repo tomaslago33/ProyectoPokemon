@@ -123,20 +123,22 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* comienzo de stylo de la parte de las primerasa imagenes y cuadros */
+
+#fondo{
+  background-image: url(/imagenes_pag3/fondodelapagina.png);
+} 
+
+#fondo2{
+  background-color: #ffffff;
+}
+
+/* comienzo de stylo de la parte de las primeras imagenes y cuadros */
 .titulo { 
-  width: 73%;             /* igual al .contenedor */
-  max-width: 1200px;      /* igual también */
-  margin: 0 auto 40px;    /* centra con auto y separa abajo */
-  padding: 20px 0;
-  color: #dbd3d3;
-  text-align: justify;
-  font-size:20px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-
-
+  color: #919191;
+  cursor: default;
+  font-size: 287.5%;
+  line-height: 225%;
+  text-transform: none;
   font-family: "Flexo-Regular", arial, sans-serif;
 }
 .imag {
@@ -162,7 +164,13 @@
 .caja {
   border-radius: 5px;
   overflow: hidden;
+  transition: transform 0.2s ease;
 }
+
+.caja:hover {
+  transform: scale(1.03);
+}
+
 
 
 .espacio-inferior {
