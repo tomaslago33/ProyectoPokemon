@@ -119,12 +119,16 @@
                         <div class="shutter-content">
                             <!--Alexis Contenido-->
                             <div class="container-fluid p-5" style="max-width: 1024px;">
-                                <div class="row">
-                                    <div class="col-ms-12 col-lg-6"><p class="h3 text-light">Tipo y debilidad</p></div>
-                                    <div class="col-ms-12 col-lg-6"><p class="mt-1" style="color: white;">T = Tipo &nbsp;&nbsp;&nbsp; D = Debilidad</p></div>
-                                </div>
-                                <div class="row">
-                            <div class="col-6 col-lg-6 ">
+            <div class="row">
+                <div class="container-tipo col-ms-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-ms-12 col-lg-6"><p class="h3 text-light">Tipo y debilidad</p></div>
+                        <div class="col-ms-12 col-lg-6"><p class="mt-1" style="color: white;">T = Tipo &nbsp;&nbsp;&nbsp; D = Debilidad</p></div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-lg-6 ">
                                 <div>
                                     <div class="col mt-4 d-flex ">
                                     <div class="tipo-box ng-verde d-flex justify-content-center rounded" style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;"><p class="h5" style="font-weight: 375;">Bicho</p> </div>
@@ -253,20 +257,64 @@
                                 </div>
                             </div>
                         </div>
-                                   <div class="row">
-                                    <div class="col-12 col-lg-6">
-                                        <div><p class="h4" style="font-weight: 450;">Secuencia</p></div>
-                                        <div class="d-flex align-items-center mt-3z">
-                                        <input type="number" class="form-control text-center rango-input" value="1">
-                                        <span class="text-white">-</span>
-                                        <input type="number" class="form-control text-center rango-input" value="1025">
-                                        </div>
-                                    </div>
-                                </div>
-
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div><p class="h4" style="font-weight: 450;">Secuencia</p></div>
+                                <div class="d-flex align-items-center mt-3z">
+                                <input type="number" class="form-control text-center rango-input" value="1">
+                                <span class="text-white">-</span>
+                                <input type="number" class="form-control text-center rango-input" value="1025">
                                 </div>
                             </div>
                         </div>
+
+                    </div>
+                </div>
+                <div class="col col-lg-6  ms-4" style="width: 400px;">
+                    <div class="col-md-12">
+                        <p class="h2 text-light" style="font-weight: 450;">Habilidad</p>
+                        <select class="select-con-icono fs-5">
+                            <option value="default">Todas</option>
+                            <option value="Absorve agua">Absorve agua</option>
+                        </select>
+                        </div>
+
+                    <div class="col">
+                        <p class="h3 text-light mt-4" style="font-weight:450">Altura</p>
+                        <div class="row">
+                            <div class="d-flex justify-content-around mt-2">
+                                <div class="c-img col-4  rounded" onclick="this.classList.toggle('activo')" style="width: 95px;height: 75px;"><img class="img-fluid img-icon rounded " src="altura1-removebg-preview.png" alt=""></div>
+                                <div class="c-img col-4  rounded" onclick="this.classList.toggle('activo')" style="width: 95px;height: 75px;"><img class="img-fluid img-icon rounded " src="altura_2-removebg-preview.png" alt=""></div>
+                                <div class="c-img col-4  rounded" onclick="this.classList.toggle('activo')" style="width: 95px;height: 75px;"><img class="img-fluid img-icon rounded " src="altura3-removebg-preview.png" alt=""></div>
+                            </div>                 
+                        </div>
+                    <div class="col">
+                        <p class="h3 text-light mt-4" style="font-weight:450">Peso</p>
+                        <div class="row">
+                            <div class="d-flex justify-content-around mt-2">
+                                <div class="c-img col-4  rounded" onclick="this.classList.toggle('activo')" style="width: 95px;height: 75px;"><img class="img-fluid img-icon rounded " src="3_puntos-removebg-preview.png" alt=""></div>
+                                <div class="c-img col-4  rounded" onclick="this.classList.toggle('activo')" style="width: 95px;height: 75px;"><img class="img-fluid img-icon rounded " src="5_puntos-removebg-preview.png" alt=""></div>
+                                <div class="c-img col-4  rounded" onclick="this.classList.toggle('activo')" style="width: 95px;height: 75px;"><img class="img-fluid img-icon rounded " src="8_puntos-removebg-preview.png" alt=""></div>
+                            </div>
+                        <div class="row-justify-content-end-lg justify-content-center-md">
+                            <div class="d-flex justify-content-center justify-content-lg-end flex-wrap mt-5">
+                                <button class="button-r" style="width: 160px; height: 53px; background-color: rgb(182, 182, 182); margin: 5px;">
+                                    <p class="h5 mt-1">Restablecer</p>
+                                </button>
+                                <button class="button-s" style="width: 130px; height: 53px; background-color: orangered; padding: 15px 25px; margin: 5px;">
+                                    <i class="bi bi-search d-flex h5 justify-content-center">Buscar</i>
+                                </button>
+                                </div>
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+                                        
+                                 </div>
 
                         <div class="espacio" style="background-color: #545756; width: 100%;">
                             <h1 style="height: 36px; width: 100%;"></h1>

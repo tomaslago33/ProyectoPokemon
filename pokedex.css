@@ -109,3 +109,76 @@
 .ng-roca{background-color:#a38c21 ;}
 .ng-agua{background-color: #4592c4;}
 
+
+@media (max-width: 992px) {
+    .habilidad{
+        width: 100%;
+    }
+    .select-con-icono {
+        width: 100% !important;
+        height: 40px !important;
+    }
+    .button-s{
+        width: 230px !important;
+        margin-left: 20px !important;
+    }
+    .button-r{
+        width: 230px !important;
+        margin-right: 20px !important;
+    }
+
+}
+.button-s{
+    border: none;
+    width: 130px; 
+    height: 53px;
+    background-color: orangered;padding: 15px 25px;
+    margin: 5px;}
+  .button-s:hover {
+    background-color: rgb(187, 52, 3) !important; 
+  }
+
+  .button-r{border: none;width: 160px; height: 53px; background-color: rgb(182, 182, 182); margin: 5px;}
+  .button-r:hover {
+    background-color: rgb(133, 133, 133) !important; 
+  }
+
+.select-con-icono {
+    background-color: #181919;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 8px;
+    padding-left: 54px;
+    background-image: url('pokebola-Photoroom.png');
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+
+  }
+
+  .select-con-icono:focus {
+    outline: none;
+  }
+
+  select option {
+    background-color: #181919;
+    color: white;
+  }
+
+
+.c-img {
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.c-img.activo {
+  background-color: orangered !important;
+}
+
+.c-img.activo .img-icon {
+  filter: brightness(0) invert(1); 
+}
