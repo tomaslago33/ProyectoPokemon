@@ -78,3 +78,15 @@
     display: inline-block;
     transition: transform 0.4s ease-out;
 }
+
+/* Alexis */
+.c-botton {
+    cursor: pointer;
+}
+
+.c-botton.activo {
+  background-color: #41aee0 !important;
+}
+
+
+.ng-verde{background-color: #729f3f;}
