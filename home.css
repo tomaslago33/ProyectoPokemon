@@ -242,3 +242,7 @@ span a {
   background-color: rgb(1, 71, 1);
   transform: translateY(-8px);
 }
+
+.nav-link.active {
+  background-color: #6b6b6b;
+}
