@@ -177,4 +177,66 @@
   margin-bottom: 20px;
 }
 
+.lift-up {
+    transform: translateY(-30px); /* Podés ajustar el valor según lo que necesites */
+}
+.custom-container {
+    max-width: 900px;
+    margin: 0 auto; /* para centrar */
+}
 
+.cajita{
+    border-radius: 10px;
+    width: 300px;
+    overflow: hidden;
+}
+.caja1 {
+    
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+
+.caja1 img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.caja1 > .container-fluid {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    min-height: 180px;
+
+}
+
+h3 {
+  font-size: 1.25rem; /* o el tamaño que quieras */
+}
+.cajita-naranja {
+    background-color: #ee6b2f;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0; /* <-- quitamos el padding */
+    width: 100%;
+    max-width: 280px;
+    height: 140px;
+
+}
+
+.titulo-cajita {
+    color: white;
+    margin: 0;
+    padding: 12px; /* damos padding solo al texto */
+    height: 100px;
+}
+
+.subcajita {
+    background-color: #30a7d7;
+    border-radius: 0; /* <-- sin bordes redondeados para que ocupe todo */
+    padding: 12px;
+}
