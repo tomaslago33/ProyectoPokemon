@@ -1,0 +1,113 @@
+@media screen and (min-width: 576px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        margin-top: 100px;
+    }
+
+    .carousel-inner {
+        display: block;
+        transition: transform 10s ease-out;
+        /* CAMBIO PARA ANIMACION*/
+        overflow-x: hidden;
+    }
+
+    .carousel-item {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/4);
+        /* transition: none !important; */
+        transition: flex .2s ease-out, transform .2s ease-out;
+        /* CAMBIO PARA ANIMACION*/
+        position: relative;
+    }
+
+    .carousel-item:not(.active) .card-body {
+        overflow: hidden;
+        background-color: rgb(63, 63, 63);
+        color: white;
+    }
+
+    .carousel-item:not(.active) .card-body p {
+        display: none;
+        /* CAMBIO PARA ANIMACION*/
+        transition: opacity 1s ease-out, transform 1s ease-out;
+        /* CAMBIO PARA ANIMACION*/
+
+    }
+
+    .carousel-item:not(.active) .card-body .h3 {
+        display: none;
+    }
+
+    .carousel-item:not(.active) .card-body h3 {
+        font-size: 20px;
+    }
+
+
+    .carousel-item.active {
+        flex: 0 0 calc(85%/3);
+        display: block;
+        margin-right: 0;
+        transform: translateX(0);
+        /* transition: none !important;   */
+        transition: flex .1s ease-in, transform .5s ease;
+        /* CAMBIO PARA ANIMACION*/
+    }
+
+    .carousel-item.active .card-body {
+        overflow: visible;
+        height: auto;
+        background-color: rgb(63, 63, 63);
+        color: white;
+    }
+
+    .carousel-item.active .card-body p {
+        display: block;
+        transform: translateY(0);
+        transition: opacity .5s ease .2s, transform .2s ease .2s;
+    }
+
+    .carousel-item.active .card-body .h3 {
+        display: block;
+        transform: translateY(0);
+        /* CAMBIO PARA ANIMACION*/
+        transition: opacity .5s ease .2s, transform .2s ease .2s;
+        /* CAMBIO PARA ANIMACION*/
+    }
+
+}
+
+
+.img-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner {
+    padding: 1em;
+    overflow-x: hidden;
+}
+
+.card {
+    margin: 0;
+    width: 100%;
+
+}
+
+.carousel-inner {
+    transition: none !important;
+}
