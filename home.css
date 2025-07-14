@@ -257,3 +257,53 @@ span a {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+.ant-0{
+  background-color: pink; 
+  transition: .5s;
+  will-change: transform;
+}
+.ant-0:hover{
+  background-color: rgb(110, 84, 88); 
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.ant-1{
+  background-color: rgb(11, 92, 232);
+  transition: .5s;
+  will-change: transform;
+}
+.ant-1:hover{
+  background-color: rgb(10, 60, 146);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.ant-2{
+  background-color: rgb(35, 129, 70)  ;
+  transition: .5s;
+  will-change: transform;
+}
+.ant-2:hover{
+  background-color: rgb(19, 72, 39);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.ant-3{
+  background-color: cornflowerblue; 
+  transition: .5s;
+  will-change: transform;
+}
+.ant-3:hover{
+  background-color: rgb(57, 82, 128); 
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.ant-4{
+  background-color: rgb(58, 55, 55); 
+  transition: .5s;
+  will-change: transform;
+}
+.ant-4:hover{
+  background-color: rgb(31, 30, 30); 
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
