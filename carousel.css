@@ -3,9 +3,14 @@
         width: 220vh;
     }
 
-    .carousel-control-prev,
+    .carousel-control-prev {
+        margin-right: 10%;
+        margin-top: 5%;
+    }
+
     .carousel-control-next {
-        margin-top: 100px;
+        margin-right: 7%;
+        margin-top: 5%;
     }
 
     .carousel-inner {
@@ -18,7 +23,7 @@
     .carousel-item {
         display: block;
         margin-right: 0;
-        flex: 0 0 calc(77%/5);
+        flex: 0 0 calc(100%/6);
         /* transition: none !important; */
         transition: flex .2s ease-out, transform .2s ease-out;
         /* CAMBIO PARA ANIMACION*/
@@ -49,7 +54,7 @@
 
 
     .carousel-item.active {
-        flex: 0 0 calc(85%/3);
+        flex: 0 0 calc(89%/4);
         display: block;
         margin-right: 0;
         transform: translateX(0);
