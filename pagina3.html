@@ -12,6 +12,28 @@
     <link rel="stylesheet" href="home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
+<style>
+  .cajitainicio{
+        border-radius: 10px;
+        width: 300px;
+        height: 50px;
+        overflow: hidden;
+        color: white;
+        background-color: #313131;
+        padding: 1%;
+    }
+    #contiene{
+       transition: .5s;
+    }
+    #contiene:hover {
+      transform: translateY(-4px); /* se mueve 5px hacia arriba */
+    }
+  .container-sin-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+</style>
 <body>
     <!-- NAV MELINA-->
    <div id="gus-wrapper">
@@ -99,10 +121,9 @@
    
 
 
-<div class="conteiner mt-5 mb-3 align-items-center" style="background-image: url(home/container_bg.png); background-color: white;">
+<div class="conteiner mt-5 mb-0 align-items-center container-sin-padding" style=" background-color: white;">
   <div class="row justify-content-center" id="fondo">
-    
-    <div class="col-md-10" id="fondo2">
+    <div class="col-md-8" id="fondo2"> <!--de aca se cambia el tamaño del ancho-->
       <h1 class="titulo">Videojuegos y aplicaciones</h1>
       <div class="row">
         <!-- Columna principal -->
@@ -113,7 +134,7 @@
               <h3>
                 Arboleda de Eevee, la expansión de <em>JCC&nbsp;Pokémon Pocket</em> más adorable
               </h3>
-              <p style="color: black;">
+              <p style="color: black; font-size: 18px;">
                 Muy pronto llega una nueva expansión que tendrá como protagonistas al icónico Eevee y sus adorables evoluciones
               </p>
               <br>
@@ -173,110 +194,129 @@
             </div>
           </div>
 
+          
           <!-- BLOQUE IMAGEN A LA IZQUIERDA -->
-          <div class="mb-3 d-flex align-items-center caja" style="background-color: #e6bc2f;">
-            <div style="flex: 0 0 40%;">
-              <img class="imag" src="imagenes_pag3/imagen6.png" alt="" style="object-fit: contain; height: 100%; width: 100%;">
+          <div class="mb-3 d-flex align-items-center caja" style="background-color: #e6bc2f; height: 120px; max-width: 300px; border-radius: 6px;">
+            <div style="flex: 0 0 35%; height: 100%;">
+              <img src="imagenes_pag3/imagen6.png" alt="" style="object-fit: contain; height: 100%; width: 100%;">
             </div>
-            <div class="bloque-texto p-2 flex-grow-1" style="color: white;">
-              <h3>Mira las aplicaciones móviles Pokémon</h3>
-              <br>
-              <br>
+            <div class="p-2 flex-grow-1" style="color: white; font-size: 14px;">
+              <h6 style="margin: 0;">Mira las<br>aplicaciones<br>móviles Pokémon</h6>
             </div>
           </div>
+
         </div> <!-- cierre col-lg-4 -->
 
       </div> <!-- cierre row -->
     </div> <!-- cierre col-md-10 -->
   </div> <!-- cierre row justify-content-center -->
 </div> <!-- cierre container -->
-  <div class="container">
-    <div class="row justify-content-end">
-      <div class="col-md-6 mb-2 cajita" style="background-color: #676767;">
-        <p>Todos los videojuegos</p>
-      </div>
+
+
+<!--creacion de la segunda parte de la pagina -->
+
+<div class="container container-sin-padding" id="fondo">
+  <div class="row justify-content-end" >
+    <div class="col-md-6 mb-2 cajitainicio">
+      <h5>Todos los videojuegos</h5>
     </div>
-  </div>
+  </div> 
+</div>
 
-  <div class="custom-container py-2" style="background-color: white;">
-    <div class="row justify-content-center">
-      <div class="col-8 col-lg-4 col-xxl-4 caja1">
-        <img src="2_1.png" alt="" class="img-fluid" style="width: 100%;">
-        <div class="container-fluid" style="background-color: #B38AEA;">
-          <h3 style="color: white;">Silvally y Rampardos: un equipo de lo más Normal</h3>
-          <p>
-            Silvally y el poderoso Rampardos aúnan fuerzas para lograr una ofensiva estable y muchos Fuera de Combate
-          </p>
-          <br>
+<div class="container-fluid bg-white d-flex justify-content-center container-sin-padding" id="fondo">
+  <div class="col-8 col-lg-10 p-lg-5 p-0" >
+    <div class="row justify-content-center" id="fondo2">
+      <!-- 🟥 Columna 1 - más baja -->
+      <div class="col-12 col-lg-4 mt-lg-5">
+        <div class="rounded mb-4" style="overflow: hidden;" id="contiene">
+          <img class="img-fluid w-100 rounded-top" src="imagenes_pag3/2_1.png" style="width: 100%; " alt="">
+          <div class="container-fluid" style="background-color: #B38AEA;">
+            <h3 style="color: white;">Silvally y Rampardos: un equipo de lo más Normal</h3>
+            <p>
+              Silvally y el poderoso Rampardos aúnan fuerzas para lograr una ofensiva estable y muchos Fuera de Combate
+            </p>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="rounded mb-4 " style=" overflow: hidden;" id="contiene">
+          <img src="imagenes_pag3/2_4.png" alt="" class="img-fluid w-100 rounded-top" style="width: 100%; ">
+          <div class="container-fluid" style="background-color: #4dad5b;">
+            <h3 style="color: white;">
+                Aparición masiva de Ultraentes del <em>Juego de Cartas Coleccionables Pokémon Pocket</em>
+            </h3>
+            <p>
+                Invoca el poder del Ultraespacio para conseguir cartas al realizar elecciones mágicas y completar las misiones de este evento
+            </p>
+            <br>
+          </div>
         </div>
       </div>
 
-      <div class="col-8 col-lg-4 col-xxl-4 lift-up caja1">
-        <img src="2_2.png" alt="" class="img-fluid" style="width: 100%;">
-        <div class="container-fluid" style="background-color: #a4a4a4;">
-          <h3>Arrincona a tus rivales con Stoutland y Gallade&nbsp;ex</h3>
-          <p>
-            Fuerza a tus oponentes a unir más Energía y luego hazlos picadillo con esta propuesta de baraja y estrategia
-          </p>
+      <!-- 🟨 Columna 2 - más alta -->
+      <div class="col-12 col-lg-4 mt-lg-0">
+        <div class="rounded mb-4" style=" overflow: hidden;" id="contiene">
+          <img src="imagenes_pag3/2_2.png" alt="" class="img-fluid w-100 rounded-top" style="width: 100%;">
+          <div class="container-fluid" style=" background-color: #a4a4a4;">
+            <h3>Arrincona a tus rivales con Stoutland y Gallade&nbsp;ex</h3>
+            <p>
+                Fuerza a tus oponentes a unir más Energía y luego hazlos picadillo con esta propuesta de baraja y estrategia
+            </p>
+            <br>
+            <br>
+
+          </div>
+        </div>
+        <div class="rounded mb-4" style=" overflow: hidden;" id="contiene">
+          <img src="imagenes_pag3/2_5.png" alt="" class="img-fluid w-100 rounded-top" style="width: 100%; "> 
+          <div class="container-fluid" style="background-color: #1b53ba;">
+            <h3 style="color: white;">Disfruta del próximo Pokémon Presents el 22 de julio de 2025</h3>
+            <p>
+                Visita el canal oficial de Pokémon de YouTube para disfrutar de esta presentación que incluirá todas las noticias y novedades de Pokémon
+            </p>
+            <br>
+          </div>
         </div>
       </div>
 
-      <div class="col-8 col-lg-4 col-xxl-4 caja1">
-        <img src="2_3.png" alt="" class="img-fluid" style="width: 100%;">
-        <div class="container-fluid" style="background-color: #E3350D;">
-          <h3 style="color: white;">Viaja por una Paldea optimizada en Nintendo Switch&nbsp;2</h3>
-          <p style="color: white;">
-            Ya está disponible la actualización gratuita para <em>Pokémon Escarlata</em> y <em>Pokémon Púrpura</em> que mejora la calidad de imagen y FPS
-          </p>
+      <!-- 🟧 Columna 3 - posición intermedia -->
+      <div class="col-12 col-lg-4 mt-lg-5">
+        <div class="rounded mb-4" style=" overflow: hidden;" id="contiene">
+          <img src="imagenes_pag3/2_3.png" alt="" class="img-fluid w-100 rounded-top" style="width: 100%;"> 
+          <div class="container-fluid" style="background-color: #E3350D;">
+            <h3 style="color: white;">Viaja por una Paldea optimizada en Nintendo Switch&nbsp;2</h3>
+            <p style="color: white;">
+                Ya está disponible la actualización gratuita para <em>Pokémon Escarlata</em> y <em>Pokémon Púrpura</em> que mejora la calidad de imagen y FPS
+            </p>
+            <br>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-8 col-lg-4 col-xxl-4 py-2 caja1">
-        <img src="2_4.png" alt="" class="img-fluid" style="width: 100%;">
-        <div class="container-fluid" style="background-color: #4dad5b;">
-          <h3 style="color: white;">
-            Aparición masiva de Ultraentes del <em>Juego de Cartas Coleccionables Pokémon Pocket</em>
-          </h3>
-          <p>
-            Invoca el poder del Ultraespacio para conseguir cartas al realizar elecciones mágicas y completar las misiones de este evento
-          </p>
+        <div class="rounded mb-4" style=" overflow: hidden;" id="contiene">
+          <img src="imagenes_pag3/2_6.png" alt="" class="img-fluid w-100 rounded-top" style="width: 100%; " id="contiene"> 
+          <div class="container-fluid" style="background-color: #ee6b2f;">
+            <h3 style="color: white;">
+                Échate a la carretera con "El viaje de <em>Pokémon&nbsp;GO</em>" este verano
+            </h3>
+            <p>
+                Pikachu y sus amigos salen a un viaje de <em>Pokémon&nbsp;GO</em> por carretera; sigue este tour por diferentes ciudades europeas desde el 16&nbsp;de&nbsp;julio
+            </p>
+            <br>
+          </div>
         </div>
-      </div>
 
-      <div class="col-8 col-lg-4 col-xxl-4 py-2 lift-up caja1">
-        <img src="2_5.png" alt="" class="img-fluid" style="width: 100%;">
-        <div class="container-fluid" style="background-color: #1b53ba;">
-          <h3 style="color: white;">Disfruta del próximo Pokémon Presents el 22 de julio de 2025</h3>
-          <p>
-            Visita el canal oficial de Pokémon de YouTube para disfrutar de esta presentación que incluirá todas las noticias y novedades de Pokémon
-          </p>
-        </div>
-      </div>
-
-      <div class="col-8 col-lg-4 col-xxl-4 py-2 caja1">
-        <img src="2_6.png" alt="" class="img-fluid" style="width: 100%;">
-        <div class="container-fluid" style="background-color: #ee6b2f;">
-          <h3 style="color: white;">
-            Échate a la carretera con "El viaje de <em>Pokémon&nbsp;GO</em>" este verano
-          </h3>
-          <p>
-            Pikachu y sus amigos salen a un viaje de <em>Pokémon&nbsp;GO</em> por carretera; sigue este tour por diferentes ciudades europeas desde el 16&nbsp;de&nbsp;julio
-          </p>
-        </div>
-      </div>
-
-      <div class="row justify-content-end">
-        <div class="col-12 col-md-4 col-lg-3 cajita-naranja">
-          <h3 class="titulo-cajita">Todas las noticias de <br>videojuegos y <br> aplicaciones</h3>
-          <div class="subcajita p-2">
-            <p class="mb-0">¡No te pierdas ninguna novedad!</p>
+        <!-- Ver todas las noticias -->
+        <div class="rounded mb-5" style="overflow: hidden; width: 100%;" id="contiene">
+          <div style="background-color: rgb(237, 88, 25); color: white; padding: 12px 16px; font-size: 22px; font-family: Arial, Helvetica, sans-serif;">
+            Todas las noticias de <br> videojuegos y <br>aplicaciones
+          </div>
+          <div style="background-color: rgb(18, 164, 210); color: black; padding: 12px 16px; font-family: Arial, Helvetica, sans-serif;">
+            ¡No te pierdas ninguna novedad!
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
 
 
@@ -355,9 +395,8 @@
             </small>
         </div>
         </div>
+    
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>

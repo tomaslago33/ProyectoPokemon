@@ -176,7 +176,7 @@
 .espacio-inferior {
   margin-bottom: 20px;
 }
-
+/* style de la segunda parte de la pagina*/
 .lift-up {
     transform: translateY(-30px); /* Podés ajustar el valor según lo que necesites */
 }
@@ -185,24 +185,24 @@
     margin: 0 auto; /* para centrar */
 }
 
-.cajita{
+.cajitainicio{
     border-radius: 10px;
     width: 300px;
     overflow: hidden;
 }
-.caja1 {
+.cajaprincipal {
     
     border-radius: 8px;
     overflow: hidden;
     
 }
 
-.caja1 img {
+.cajaprincipal img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
-.caja1 > .container-fluid {
+.cajaprincipal > .container-fluid {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     min-height: 280px;
@@ -217,22 +217,24 @@
 h3 {
   font-size: 1.25rem; /* o el tamaño que quieras */
 }
-.cajita-naranja {
+.cajitachica-naranja {
     background-color: #ee6b2f;
+    color: white;
     border-radius: 8px;
     overflow: hidden;
     padding: 0; /* <-- quitamos el padding */
     width: 100%;
-    max-width: 280px;
-    height: 140px;
+    max-width: 350px;
+    height: 145px;
+    text-align: center;
 
 }
 
-.titulo-cajita {
+.titulo-cajitachica {
     color: white;
     margin: 0;
     padding: 12px; /* damos padding solo al texto */
-    height: 100px;
+    height: 220px;
 }
 
 .subcajita {
