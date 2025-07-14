@@ -307,3 +307,16 @@ span a {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+.fondo-home {
+  background-image: url(home/body_bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Pantallas chicas: fondo blanco sin imagen */
+@media (max-width: 991.98px) {
+  .fondo-home {
+    background-image: none !important;
+    background-color: white !important;
+  }
+}
