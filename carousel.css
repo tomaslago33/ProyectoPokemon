@@ -1,4 +1,7 @@
 @media screen and (min-width: 576px) {
+    #carouselExample {
+        width: 220vh;
+    }
 
     .carousel-control-prev,
     .carousel-control-next {
@@ -6,7 +9,7 @@
     }
 
     .carousel-inner {
-        display: block;
+        display: flex;
         transition: transform 10s ease-out;
         /* CAMBIO PARA ANIMACION*/
         overflow-x: hidden;
@@ -15,7 +18,7 @@
     .carousel-item {
         display: block;
         margin-right: 0;
-        flex: 0 0 calc(100%/4);
+        flex: 0 0 calc(77%/5);
         /* transition: none !important; */
         transition: flex .2s ease-out, transform .2s ease-out;
         /* CAMBIO PARA ANIMACION*/
