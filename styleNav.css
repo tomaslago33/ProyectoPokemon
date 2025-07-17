@@ -1,7 +1,7 @@
-
 .navbar-light .navbar-nav .nav-link {
-  color: #706d6d;
+    color: #706d6d;
 }
+
 .nav-item {
     width: 120px;
     height: 100px;
@@ -12,9 +12,10 @@
 }
 
 
-.nav-item span, .nav-item img {
+.nav-item span,
+.nav-item img {
     transition: all 0.3s ease;
-} 
+}
 
 .nav-item:hover span {
     color: white;
@@ -23,21 +24,27 @@
 .nav-item:hover #homeImg {
     content: url(imgNav/home2.png);
 }
+
 .nav-item:hover #pokeImg {
     content: url(imgNav/poke2.png);
 }
+
 .nav-item:hover #appImg {
     content: url(imgNav/phone2.png);
 }
+
 .nav-item:hover #cardImg {
     content: url(imgNav/cards2.png);
 }
+
 .nav-item:hover #playImg {
     content: url(imgNav/play2.png);
 }
+
 .nav-item:hover #tropImg {
     content: url(imgNav/trophy2.png);
 }
+
 .nav-item:hover #newsImg {
     content: url(imgNav/news2.png);
 }
@@ -52,7 +59,7 @@
     font-size: 13px;
 }
 
-.nav-item .nav-link{
+.nav-item .nav-link {
     display: block;
     width: 100%;
     height: 100%;
@@ -60,6 +67,19 @@
 
 #item1 {
     border-bottom: 6px solid gray;
+}
+
+#item1active {
+    background-color: gray;
+
+}
+
+#item1active #homeImg {
+    content: url(imgNav/home2.png);
+}
+
+#item1active span {
+    color: white;
 }
 
 #item2 {
@@ -91,40 +111,46 @@
     background-color: gray;
     transition: 0.7s;
 }
+
 #item2:hover {
     background-color: red;
     transition: 0.7s;
 }
+
 #item3:hover {
     background-color: orange;
     transition: 0.7s;
 }
+
 #item4:hover {
     background-color: rgb(188, 188, 12);
     transition: 0.7s;
 }
+
 #item5:hover {
     background-color: green;
     transition: 0.7s;
 }
+
 #item6:hover {
     background-color: rgb(77, 155, 203);
     transition: 0.7s;
 }
+
 #item7:hover {
-    background-color:rgb(7, 7, 155);
+    background-color: rgb(7, 7, 155);
     transition: 0.7s;
 }
 
 
 @media (min-width: 992px) {
     .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     .nav-item {
@@ -141,59 +167,62 @@
 }
 
 @media (max-width: 991.98px) {
-  /* Estilos que solo se aplican cuando el navbar está colapsado */
-  .navbar-collapse {
-    background-color:   white;
-  } 
 
-  .container-toggler button {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    background-color: rgb(0, 0, 0);
-  };
+    /* Estilos que solo se aplican cuando el navbar está colapsado */
+    .navbar-collapse {
+        background-color: white;
+    }
 
-  .material-icons {
-    font-size: 2rem;
-    color: white;
-  }
+    .container-toggler button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        background-color: rgb(0, 0, 0);
+    }
 
-  .container-toggler {
-    background-color: rgb(41, 40, 40);
-    width: 100%;
-  }
+    ;
 
-  .navbar-collapse .container {
-    padding: 0;
-    max-width: 100%;
-  }
+    .material-icons {
+        font-size: 2rem;
+        color: white;
+    }
 
-   .nav-item .nav-link img {
-    display: inline;
-  }
+    .container-toggler {
+        background-color: rgb(41, 40, 40);
+        width: 100%;
+    }
 
-  .navbar-nav {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
+    .navbar-collapse .container {
+        padding: 0;
+        max-width: 100%;
+    }
 
-  .nav-item {
-    width: 100%;
-    height: 50px;
-    text-align: left;
-    border: 1px solid rgb(198, 197, 197);
+    .nav-item .nav-link img {
+        display: inline;
+    }
 
-  }
+    .navbar-nav {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-  .nav-link span {
-    flex-grow: 1;
-    padding-left: 1rem;
-  }
+    .nav-item {
+        width: 100%;
+        height: 50px;
+        text-align: left;
+        border: 1px solid rgb(198, 197, 197);
 
-  .navbar-nav .nav-link {
-    justify-content: start;
-  }
+    }
+
+    .nav-link span {
+        flex-grow: 1;
+        padding-left: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        justify-content: start;
+    }
 
 
     #item1 {
@@ -267,4 +296,3 @@
     }
 
 }
-
