@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styleNav.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pokedex.css">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- NAV MELINA-->
+    <div id="gus-wrapper">
+        <div class="top-banner">
+            <img src="imagenes/logo1.png" alt="">
+            <img src="imagenes/logo2.png" alt="">
+            <img src="imagenes/logo3.png" alt="">
+            <img src="imagenes/logo4.png" alt="">
+            <img src="imagenes/logo5.png" alt="">
+        </div>
+    </div>
+
+    <!-- NAV EDGAR-->
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <div class="container-fluid">
+            <div class="container-toggler">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-icons">menu</span>
+                </button>
+                <a class="user-session">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Iniciar Sesion</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav align-items-center ms-auto w-100">
+                    <li class="nav-item" id="item1">
+                        <a class="nav-link" href="#pagina1.html">
+                            <img src="imgNav/home.png" id="homeImg" alt="">
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="item2">
+                        <a class="nav-link" href="#!">
+                            <img src="imgNav/poke.png" id="pokeImg" alt="">
+                            <span>Pokedex</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="item3">
+                        <a class="nav-link" href="#!">
+                            <img src="imgNav/phone.png" id="appImg" alt="">
+                            <span>Aplicaciones</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="item4">
+                        <a class="nav-link" href="#!">
+                            <img src="imgNav/cards.png" id="cardImg" alt="">
+                            <span>Juego de cartas coleccionables</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="item5">
+                        <a class="nav-link" href="#!">
+                            <img src="imgNav/play.png" id="playImg" alt="">
+                            <span>Dibujos Animados</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="item6">
+                        <a class="nav-link" href="#!">
+                            <img src="imgNav/trophy.png" id="tropImg" alt="">
+                            <span>Eventos de Play! Pokemon</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="item7">
+                        <a class="nav-link" href="#!">
+                            <img src="imgNav/news.png" id="newsImg" alt="">
+                            <span>Noticias</span>
+                        </a>
+                    </li>
+                </ul>
+                <form class="collapse-search-form w-100 px-3" role="search">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Buscar..." aria-label="Buscar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN EDGAR POKEDEX-->
+    <main>
+        <div class="container-fluid" style="padding: 0;">
+            <div class="row bg-light">
+                <div class="col">
+                    <h1 id="Tittle-Pokedex" style="color: gray; font-weight: 120; font-size: 40px; margin-left: 30px;">
+                        Pokédex</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="background-color: rgb(41, 41, 47); margin: -12px;">
+                <div class="col-xl-6 col-md-12 col-sm-12" style="padding: 0;">
+                    <h1 class="title-search" style="font-size: 30px; color: white; margin-top: 20px; font-weight: 120;">
+                        Nombre o numero</h1>
+                    <div class="button-search">
+                        <input type="text" style="width: 300px; height: 45px;">
+                        <button type="button" class="btn btn-lg"
+                            style="width: 60px; height: 50px; margin-left: 20px; background-color: rgb(255, 136, 0);"
+                            data-mdb-ripple-init><i class="bi bi-search"></i></button>
+                    </div>
+                    <p class="text-search" style="color: white; margin-bottom: 20px;">¡Usa la busqueda avanzada para
+                        encontrar Pokemon por su tipo, debilidad, habilidad y demas datos!</p>
+                </div>
+                <div class="col-xl-6 col-md-12 col-sm-12">
+                    <p
+                        style="background-color: rgb(74, 163, 74); color: rgb(255, 255, 255); width: 450px; height: 90px; font-size: 20px; padding: 10px; margin-top: 40px; border-radius: 10px;">
+                        Busca un Pokémon por su nombre o usando su número de la Pokédex Nacional</p>
+                </div>
+            </div>
+            <div class="row" style="margin: -12px;">
+                <div class="col-xl-12 col-md-12 col-sm-12" style="padding: 0px;">
+                    <div class="shutter-wrapper">
+                        <div class="shutter-content">
+                            <!--Alexis Contenido-->
+                            <div class="container-fluid p-5" style="max-width: 1024px;">
+                                <div class="row">
+                                    <div class="container-tipo col-ms-12 col-lg-6">
+                                        <div class="row">
+                                            <div class="col-ms-12 col-lg-6">
+                                                <p class="h3 text-light">Tipo y debilidad</p>
+                                            </div>
+                                            <div class="col-ms-12 col-lg-6">
+                                                <p class="mt-1" style="color: white;">T = Tipo &nbsp;&nbsp;&nbsp; D =
+                                                    Debilidad</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 col-lg-6 ">
+                                                <div>
+                                                    <div class="col mt-4 d-flex ">
+                                                        <div class="tipo-box ng-verde d-flex justify-content-center rounded"
+                                                            style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                            <p class="h5" style="font-weight: 375;">Bicho</p>
+                                                        </div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            T</div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            D</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="col mt-2 d-flex ">
+                                                            <div class="tipo-box ng-dragon d-flex justify-content-center rounded"
+                                                                style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                                <p class="h5" style="font-weight: 375;">Dragón</p>
+                                                            </div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                T</div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                D</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="col mt-2 d-flex ">
+                                                            <div class="tipo-box ng-hada d-flex justify-content-center rounded"
+                                                                style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                                <p class="h5" style="font-weight: 375;">Hada</p>
+                                                            </div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                T</div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                D</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="col mt-2 d-flex ">
+                                                            <div class="tipo-box ng-fuego d-flex justify-content-center rounded"
+                                                                style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                                <p class="h5" style="font-weight: 375;">Fuego</p>
+                                                            </div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                T</div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                D</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="col mt-2 d-flex ">
+                                                            <div class="tipo-box ng-fantasma d-flex justify-content-center rounded"
+                                                                style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                                <p class="h5" style="font-weight: 375;">Fantasma</p>
+                                                            </div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                T</div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                D</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="col mt-2 d-flex ">
+                                                            <div class="tipo-box ng-tierra d-flex justify-content-center rounded"
+                                                                style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                                <p class="h5" style="font-weight: 375;">Tierra</p>
+                                                            </div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                T</div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                D</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="col mt-2 d-flex ">
+                                                            <div class="tipo-box ng-normal d-flex justify-content-center rounded"
+                                                                style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                                <p class="h5" style="font-weight: 375;">Normal</p>
+                                                            </div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                T</div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                D</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="col mt-2 d-flex ">
+                                                            <div class="tipo-box ng-psiquico d-flex justify-content-center rounded"
+                                                                style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                                <p class="h5" style="font-weight: 375;">psíquico</p>
+                                                            </div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                T</div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                D</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="col mt-2 d-flex ">
+                                                            <div class="tipo-box ng-acero d-flex justify-content-center rounded"
+                                                                style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                                <p class="h5" style="font-weight: 375;">Acero</p>
+                                                            </div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                T</div>
+                                                            <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                                onclick="this.classList.toggle('activo')"
+                                                                style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                                D</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6 col-lg-6 ">
+                                                <div class="col mt-4 d-flex ">
+                                                    <div class="tipo-box ng-gris d-flex justify-content-center rounded"
+                                                        style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                        <p class="h5" style="font-weight: 375;">Siniestro</p>
+                                                    </div>
+                                                    <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                        onclick="this.classList.toggle('activo')"
+                                                        style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                        T</div>
+                                                    <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                        onclick="this.classList.toggle('activo')"
+                                                        style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                        D</div>
+                                                </div>
+                                                <div>
+                                                    <div class="col mt-2 d-flex ">
+                                                        <div class="tipo-box ng-electrico d-flex justify-content-center rounded"
+                                                            style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                            <p class="h5" style="font-weight: 375;">Eléctrico</p>
+                                                        </div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            T</div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            D</div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="col mt-2 d-flex ">
+                                                        <div class="tipo-box ng-lucha d-flex justify-content-center rounded"
+                                                            style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                            <p class="h5" style="font-weight: 375;">Lucha</p>
+                                                        </div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            T</div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            D</div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="col mt-2 d-flex ">
+                                                        <div class="tipo-box ng-volador d-flex justify-content-center rounded"
+                                                            style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                            <p class="h5" style="font-weight: 375;">Vólador</p>
+                                                        </div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            T</div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            D</div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="col mt-2 d-flex ">
+                                                        <div class="tipo-box ng-planta d-flex justify-content-center rounded"
+                                                            style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                            <p class="h5" style="font-weight: 375;">Planta</p>
+                                                        </div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            T</div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            D</div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="col mt-2 d-flex ">
+                                                        <div class="tipo-box ng-hielo d-flex justify-content-center rounded"
+                                                            style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                            <p class="h5" style="font-weight: 375;">Hielo</p>
+                                                        </div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            T</div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            D</div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="col mt-2 d-flex ">
+                                                        <div class="tipo-box ng-veneno d-flex justify-content-center rounded"
+                                                            style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                            <p class="h5" style="font-weight: 375;">Veneno</p>
+                                                        </div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            T</div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            D</div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="col mt-2 d-flex ">
+                                                        <div class="tipo-box ng-roca d-flex justify-content-center rounded"
+                                                            style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                            <p class="h5" style="font-weight: 375;">Roca</p>
+                                                        </div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            T</div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            D</div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="col mt-2 d-flex ">
+                                                        <div class="tipo-box ng-agua d-flex justify-content-center rounded"
+                                                            style="color: white;border: 2px solid rgb(173, 171, 171);width: 114px; height: 32px;">
+                                                            <p class="h5" style="font-weight: 375;">Agua</p>
+                                                        </div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            T</div>
+                                                        <div class="c-botton tipo-box rounded-circle bg-light fs-5 d-flex justify-content-center ms-2 "
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="font-weight: 650;background-color: #ffffff;width: 32px; height: 32px;color: rgb(46, 45, 44);">
+                                                            D</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-lg-6">
+                                                    <div>
+                                                        <p class="h4" style="font-weight: 450;">Secuencia</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-3z">
+                                                        <input type="number"
+                                                            class="form-control text-center rango-input" value="1">
+                                                        <span class="text-white">-</span>
+                                                        <input type="number"
+                                                            class="form-control text-center rango-input" value="1025">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-6  ms-4" style="width: 400px;">
+                                        <div class="col-md-12">
+                                            <p class="h2 text-light" style="font-weight: 450;">Habilidad</p>
+                                            <select class="select-con-icono fs-5">
+                                                <option value="default">Todas</option>
+                                                <option value="Absorve agua">Absorve agua</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col">
+                                            <p class="h3 text-light mt-4" style="font-weight:450">Altura</p>
+                                            <div class="row">
+                                                <div class="d-flex justify-content-around mt-2">
+                                                    <div class="c-img col-4  rounded"
+                                                        onclick="this.classList.toggle('activo')"
+                                                        style="width: 95px;height: 75px;"><img
+                                                            class="img-fluid img-icon rounded "
+                                                            src="pokedex-img/altura1-removebg-preview.png" alt=""></div>
+                                                    <div class="c-img col-4  rounded"
+                                                        onclick="this.classList.toggle('activo')"
+                                                        style="width: 95px;height: 75px;"><img
+                                                            class="img-fluid img-icon rounded "
+                                                            src="pokedex-img/altura_2-removebg-preview.png" alt="">
+                                                    </div>
+                                                    <div class="c-img col-4  rounded"
+                                                        onclick="this.classList.toggle('activo')"
+                                                        style="width: 95px;height: 75px;"><img
+                                                            class="img-fluid img-icon rounded "
+                                                            src="pokedex-img/altura3-removebg-preview.png" alt=""></div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <p class="h3 text-light mt-4" style="font-weight:450">Peso</p>
+                                                <div class="row">
+                                                    <div class="d-flex justify-content-around mt-2">
+                                                        <div class="c-img col-4  rounded"
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="width: 95px;height: 75px;"><img
+                                                                class="img-fluid img-icon rounded "
+                                                                src="pokedex-img/3_puntos-removebg-preview.png" alt="">
+                                                        </div>
+                                                        <div class="c-img col-4  rounded"
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="width: 95px;height: 75px;"><img
+                                                                class="img-fluid img-icon rounded "
+                                                                src="pokedex-img/5_puntos-removebg-preview.png" alt="">
+                                                        </div>
+                                                        <div class="c-img col-4  rounded"
+                                                            onclick="this.classList.toggle('activo')"
+                                                            style="width: 95px;height: 75px;"><img
+                                                                class="img-fluid img-icon rounded "
+                                                                src="pokedex-img/8_puntos-removebg-preview.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row-justify-content-end-lg justify-content-center-md">
+                                                        <div
+                                                            class="d-flex justify-content-center justify-content-lg-end flex-wrap mt-5">
+                                                            <button class="button-r"
+                                                                style="width: 160px; height: 53px; background-color: rgb(182, 182, 182); margin: 5px;">
+                                                                <p class="h5 mt-1">Restablecer</p>
+                                                            </button>
+                                                            <button class="button-s"
+                                                                style="width: 130px; height: 53px; background-color: orangered; padding: 15px 25px; margin: 5px;">
+                                                                <i
+                                                                    class="bi bi-search d-flex h5 justify-content-center">Buscar</i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="espacio" style="background-color: #545756; width: 100%;">
+                            <h1 style="height: 36px; width: 100%;"></h1>
+                        </div>
+                        <button class="shutter-button">
+                            <span>Mostrar busqueda avanzada</span><span class="arrow">&#x25BC;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorCards">
+                <div class="row mb-4 mt-4">
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <button id="btnSorpresa" class="btn btn-info text-light"><i
+                                class="bi bi-arrow-clockwise"></i>¡Sorpréndeme!</button>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <span class="mx-2">Ordenar por</span>
+                        <div class="dropdown">
+                            <button id="btnOrdenar" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <svg width="30" height="30" viewBox="0 0 24 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12ZM5.07089 13C5.55612 16.3923 8.47353 19 12 19C15.5265 19 18.4439 16.3923 18.9291 13H14.8293C14.4174 14.1652 13.3062 15 12 15C10.6938 15 9.58251 14.1652 9.17068 13H5.07089ZM18.9291 11C18.4439 7.60771 15.5265 5 12 5C8.47353 5 5.55612 7.60771 5.07089 11H9.17068C9.58251 9.83481 10.6938 9 12 9C13.3062 9 14.4174 9.83481 14.8293 11H18.9291ZM12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z"
+                                        fill="currentColor" />
+                                </svg>Número inferior
+                            </button>
+                            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Numero inferior</a></li>
+                                <li><a class="dropdown-item" href="#">Numero superior</a></li>
+                                <li><a class="dropdown-item" href="#">A-Z</a></li>
+                                <li><a class="dropdown-item" href="#">Z-A</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mt-5 mb-4">
+                    <div class="col-3">
+                        <div class="card h-100 text-center border-0">
+                            <img src="imgCards/001.png" class="card-img-top mx-auto d-block bg-light" alt="Bulbasaur">
+                            <div class="card-body">
+                                <p class="card-text text-muted text-start">N.° 0001</p>
+                                <h5 class="card-title text-start">Bulbasaur</h5>
+                                <div class="pokeAtributo">
+                                    <span class="badge bg-success me-1">Planta</span>
+                                    <span class="badge bg-secondary">Veneno</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card h-100 text-center border-0">
+                            <img src="imgCards/002.png" class="card-img-top mx-auto d-block bg-light" alt="Ivysaur">
+                            <div class="card-body">
+                                <p class="card-text text-muted text-start">N.° 0002</p>
+                                <h5 class="card-title text-start">Ivysaur</h5>
+                                <div class="pokeAtributo">
+                                    <span class="badge bg-success me-1">Planta</span>
+                                    <span class="badge bg-secondary">Veneno</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card h-100 text-center border-0">
+                            <img src="imgCards/003.png" class="card-img-top mx-auto d-block bg-light" alt="Venusaur">
+                            <div class="card-body">
+                                <p class="card-text text-muted text-start">N.° 0003</p>
+                                <h5 class="card-title text-start">Venusaur</h5>
+                                <div class="pokeAtributo">
+                                    <span class="badge bg-success me-1">Planta</span>
+                                    <span class="badge bg-secondary">Veneno</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card h-100 text-center border-0">
+                            <img src="imgCards/004.png" class="card-img-top mx-auto d-block bg-light" alt="Charmander">
+                            <div class="card-body">
+                                <p class="card-text text-muted text-start">N.° 0004</p>
+                                <h5 class="card-title text-start">Charmander</h5>
+                                <div class="pokeAtributo">
+                                    <span class="badge bg-warning">Fuego</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card h-100 text-center border-0">
+                            <img src="imgCards/005.png" class="card-img-top mx-auto d-block bg-light" alt="Bulbasaur">
+                            <div class="card-body">
+                                <p class="card-text text-muted text-start">N.° 0005</p>
+                                <h5 class="card-title text-start">Charmeeon</h5>
+                                <div class="pokeAtributo">
+                                    <span class="badge bg-warning me-1">Fuego</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card h-100 text-center border-0">
+                            <img src="imgCards/006.png" class="card-img-top mx-auto d-block bg-light" alt="Bulbasaur">
+                            <div class="card-body">
+                                <p class="card-text text-muted text-start">N.° 0006</p>
+                                <h5 class="card-title text-start">Charizard</h5>
+                                <div class="pokeAtributo">
+                                    <span class="badge bg-warning me-1">Fuego</span>
+                                    <span class="badge bg-info">Volador</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card h-100 text-center border-0">
+                            <img src="imgCards/007.png" class="card-img-top mx-auto d-block bg-light" alt="Bulbasaur">
+                            <div class="card-body">
+                                <p class="card-text text-muted text-start">N.° 0007</p>
+                                <h5 class="card-title text-start">Squirtle</h5>
+                                <div class="pokeAtributo">
+                                    <span class="badge bg-primary me-1">Agua</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card h-100 text-center border-0">
+                            <img src="imgCards/008.png" class="card-img-top mx-auto d-block bg-light" alt="Bulbasaur">
+                            <div class="card-body">
+                                <p class="card-text text-muted text-start">N.° 0008</p>
+                                <h5 class="card-title text-start">Wartortle</h5>
+                                <div class="pokeAtributo">
+                                    <span class="badge bg-primary me-1">Agua</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card h-100 text-center border-0">
+                            <img src="imgCards/009.png" class="card-img-top mx-auto d-block bg-light" alt="Bulbasaur">
+                            <div class="card-body">
+                                <p class="card-text text-muted text-start">N.° 0009</p>
+                                <h5 class="card-title text-start">Blastoise</h5>
+                                <div class="pokeAtributo">
+                                    <span class="badge bg-primary me-1">Agua</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card h-100 text-center border-0">
+                            <img src="imgCards/010.png" class="card-img-top mx-auto d-block bg-light" alt="Bulbasaur">
+                            <div class="card-body">
+                                <p class="card-text text-muted text-start">N.° 0010</p>
+                                <h5 class="card-title text-start">Caterpie</h5>
+                                <div class="pokeAtributo">
+                                    <span class="badge bg-success">Bicho</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card h-100 text-center border-0">
+                            <img src="imgCards/011.png" class="card-img-top mx-auto d-block bg-light" alt="Bulbasaur">
+                            <div class="card-body">
+                                <p class="card-text text-muted text-start">N.° 0011</p>
+                                <h5 class="card-title text-start">Metapod</h5>
+                                <div class="pokeAtributo">
+                                    <span class="badge bg-success">Bicho</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card h-100 text-center border-0">
+                            <img src="imgCards/012.png" class="card-img-top mx-auto d-block bg-light" alt="Bulbasaur">
+                            <div class="card-body">
+                                <p class="card-text text-muted text-start">N.° 0012</p>
+                                <h5 class="card-title text-start">Butterfree</h5>
+                                <div class="pokeAtributo">
+                                    <span class="badge bg-success me-1">Bicho</span>
+                                    <span class="badge bg-info">Volador</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <button type="button" class="btn"
+                            style="font-size: 16px; width: 12rem; color: white; background-color: rgb(11, 145, 190);">Cargar
+                            mas
+                            Pokemon</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER ALEXIS-->
+
+    <footer>
+        <div class="contenido-registro">
+            <h1 class="titulo">¡Regístrate para recibir correos electrónicos de Pokémon!</h1>
+            <form class="registro-correo">
+                <input type="email" placeholder="Correo electrónico" required>
+
+                <div class="idioma">
+                    <select>
+                        <option value="spain">Spain</option>
+                        <option value="Inglish">Inglish</option>
+                    </select>
+                    <div><input type="text" placeholder="Fecha de nacimiento"></div>
+                </div>
+
+                <button type="subir">Regístrate</button>
+        </div>
+        </div>
+
+        <div class="seleccion">
+            <br>
+            <h1>Me gustaría recibir correos electrónicos acerca de:</h1>
+
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span>
+                    Videojuegos, aplicaciones y muchas más cosas de Pokémon
+                </span>
+            </label>
+
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span>
+                    Acepto las <a href="#">Condiciones de uso</a> y la
+                    <a href="#">Aviso de privacidad</a> de Pokémon.es
+                </span>
+            </label>
+        </div>
+
+
+
+    </footer>
+    <footer class="footer2">
+        <div class="footer-cols">
+            <div class="col">
+                <img src="home/pokemon_company.png" alt="Pokémon Logo" class="logo">
+                <ul>
+                    <li>Novedades</li>
+                    <li>Guía para padres y tutores</li>
+                    <li>Servicio de atención al cliente</li>
+                    <li>Sobre nuestra compañía</li>
+                    <li>Seleccionar país o región</li>
+                    <li>Sitio de prensa</li>
+                </ul>
+            </div>
+            <div class="col social-icons">
+                <a href="#"><img src="https://img.icons8.com/color/48/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="https://img.icons8.com/color/48/youtube-play.png" alt="YouTube"></a>
+                <a href="#"><img src="https://img.icons8.com/color/48/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram"></a>
+            </div>
+            <div class="col legal">
+                <img src="home/thepokemoncompanyinternational-seal-1596150491.png" alt="CARU Safe Harbor">
+                <ul>
+                    <li>Condiciones de uso</li>
+                    <li>Aviso de privacidad</li>
+                    <li>Página de Cookies</li>
+                    <li>Información legal</li>
+                </ul>
+                <small>
+                    ©2025 Pokémon. ©1995–2025 Nintendo/Creatures Inc./GAME FREAK inc. TM, ©Nintendo.
+                </small>
+            </div>
+        </div>
+    </footer>
+    <script src="pokedex.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
