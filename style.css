@@ -6,9 +6,6 @@
   font-weight: bold;
 }
 
-
-
-
 /* Imagen dentro del banner */
 .top-banner img {
   transition: all 0.1s ease;  /* Suaviza el efecto */
@@ -20,3 +17,228 @@
 .top-banner img:hover {
   filter: brightness(1.4);     /* Aclara la imagen */
   border: 1px solid #ffffffe5; /* Borde blanco semi-transparente */}
+
+
+/* stilo de la pagina 3, del contenido*/
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px; /* o el tamaño deseado */
+  overflow: hidden;
+}
+
+.hero .imag {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* si quieres el texto encima de la imagen */
+.hero .bloque-texto {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+.bloques {
+  background-color: #ffffff;
+  padding: 40px 50px;
+}
+
+
+.contenedor {
+  width: 70%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
+  grid-auto-rows: 200px; /* altura de cada fila */
+  gap: 20px;
+}
+
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card.mini {
+  display: flex !important;
+  flex-direction: row !important;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+
+.card-img {
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.card-texto {
+  height: 40%;
+  padding: 10px;
+  background-color: rgba(255, 180, 71, 0.9); /* fondo solo en el texto */
+  text-align: justify;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* pega el texto abajo */
+}
+
+
+
+
+.card-texto h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #000;
+}
+
+
+.card-texto p {
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#fondo{
+  background-image: url(/imagenes_pag3/fondodelapagina.png);
+} 
+
+#fondo2{
+  background-color: #ffffff;
+}
+
+/* comienzo de style de la parte de las primeras imagenes y cuadros */
+.titulo { 
+  color: #919191;
+  cursor: default;
+  font-size: 187.5%;
+  line-height: 225%;
+  text-transform: none;
+  font-family: "Flexo-Regular", arial, sans-serif;
+}
+.imag {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.bloque-texto {
+  padding: 10px;
+  color: white;
+  font-size: 0.2rem;
+  line-height: 1.3;
+  font-family: flexo-medium, Arial, Helvetica, sans-serif;
+}
+
+
+.bg-naranja { background-color: brown; }
+
+
+/* Borde redondeado para todas las cajas */
+.caja {
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.caja:hover {
+  transform: scale(1.03);
+}
+
+
+
+.espacio-inferior {
+  margin-bottom: 20px;
+}
+/* style de la segunda parte de la pagina*/
+.lift-up {
+    transform: translateY(-30px); /* Podés ajustar el valor según lo que necesites */
+}
+.custom-container {
+    max-width: 900px;
+    margin: 0 auto; /* para centrar */
+}
+
+.cajitainicio{
+    border-radius: 10px;
+    width: 300px;
+    overflow: hidden;
+}
+.cajaprincipal {
+    
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+
+.cajaprincipal img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cajaprincipal > .container-fluid {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    min-height: 180px;
+
+}
+
+h3 {
+  font-size: 1.25rem; /* o el tamaño que quieras */
+}
+.cajitachica-naranja {
+    background-color: #ee6b2f;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0; /* <-- quitamos el padding */
+    width: 100%;
+    max-width: 350px;
+    height: 145px;
+    text-align: center;
+
+}
+
+.titulo-cajitachica {
+    color: white;
+    margin: 0;
+    padding: 12px; /* damos padding solo al texto */
+    height: 220px;
+}
+
+.subcajita {
+    background-color: #30a7d7;
+    border-radius: 0; /* <-- sin bordes redondeados para que ocupe todo */
+    padding: 12px;
+}
